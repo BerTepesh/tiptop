@@ -1,0 +1,21 @@
+{% set btnLink = "{{--button_href--}}" %}
+
+<section class="intro">
+	<picture class="intro__back">
+		<source srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="images/intro-mobile.webp" media="(max-width: 576px)"/>
+		<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/intro.webp" class="lazyload" alt="Intro" title="Intro" />
+	</picture>
+	<div class="container">
+		<div class="intro__holder">
+			<div class="intro__caption">BONO DE BIENVENIDA</div>
+			<div class="intro__title">
+				100% HASTA €500 + 200 TIRADAS GRATIS
+			</div>
+			{# <div class="intro__subtitle">+ 250 Freispiele</div> #}
+			<a href="{{ btnLink }}" rel="nofollow" target="_blank" class="intro__btn btn">
+				<span>ÚNETE AHORA</span>
+			</a>
+		</div>
+	</div>
+</section>
+

@@ -1,0 +1,77 @@
+.faq {
+  margin-bottom: 15px;
+
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 35px;
+  }
+
+  @include media-breakpoint-up(xxl) {
+    margin-bottom: 65px;
+  }
+
+  &__list {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+
+    @include media-breakpoint-up(lg) {
+      gap: 5px;
+    }
+
+    @include media-breakpoint-up(xxl) {
+      gap: 20px;
+    }
+
+    li {
+      position: relative;
+      padding-left: 24px;
+
+      @include media-breakpoint-up(lg) {
+        padding-left: 34px;
+      }
+
+      @include media-breakpoint-up(xxl) {
+        padding-left: 54px;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 9px;
+        left: 2px;
+        top: 6px;
+        background: url('../images/arrow.svg') no-repeat;
+        background-size: 100% 100%;
+
+        @include media-breakpoint-up(lg) {
+          width: 16px;
+          height: 14px;
+        }
+
+        @include media-breakpoint-up(xxl) {
+          width: 24px;
+          height: 20px;
+        }
+      }
+      h4 {
+        color: #80FF00;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 121.949%;
+        margin: 0;
+
+        @include media-breakpoint-up(lg) {
+          font-size: 20px;
+        }
+
+        @include media-breakpoint-up(xxl) {
+          font-size: 27px;
+        }
+      }
+    }
+  }
+}
