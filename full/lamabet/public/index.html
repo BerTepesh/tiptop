@@ -38,6 +38,10 @@
                 <li><a href="#section8" rel="nofollow">Segurança e Integridade</a></li>
               </ul>
             </nav>
+            <div class="main-btns">
+              <a href="{{--button_href--}}" class="btn" rel="nofollow"><span>REGISTER</span></a>
+              <a href="{{--button_href--}}" class="btn" rel="nofollow"><span>LOGIN</span></a>
+            </div>
           </div>
         </div>
       </div>
@@ -83,25 +87,26 @@
       <div class="wrapper">
         <section class="intro">
           <picture class="intro__back">
-            <source srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="images/intro-mobile.webp" media="(max-width: 576px)" />
+            <source srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="images/intro-mobile.webp" media="(max-width: 575px)" />
             <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/intro.webp" class="lazyload" alt="Intro" title="Intro" />
           </picture>
           <div class="container">
             <div class="intro__holder">
+              <div class="main-btns">
+                <a href="{{--button_href--}}" class="btn" rel="nofollow"><span>REGISTER</span></a>
+                <a href="{{--button_href--}}" class="btn" rel="nofollow"><span>LOGIN</span></a>
+              </div>
               <div class="intro__caption">BONO DE BIENVENIDA</div>
               <div class="intro__title"> COMIENCE SU VIAJE CON 100% HASTA 500€ + 200 fs </div>
-              <a href="{{--button_href--}}" rel="nofollow" target="_blank" class="intro__btn btn">
+              <a href="{{--button_href--}}" rel="nofollow" target="_blank" class="intro__btn btn btn-anim">
                 <span>OBTENER BONO</span>
               </a>
             </div>
           </div>
         </section>
-        <div class="container">
-          <h1>Lamabet</h1>
-        </div>
         <section class="description" id="section0">
           <div class="container">
-            <h2>{{ --t1-- }}</h2>
+            <h1>{{ --t1-- }}</h1>
             <div>{{ --c1-- }}</div>
           </div>
         </section>
@@ -212,7 +217,7 @@
               <div class="registration__holder">
                 <div class="registration__caption">amigos de lamabet</div>
                 <div class="registration__title">invita a tus <br> amigos y reclama bonificación</div>
-                <a href="{{--button_href--}}" rel="nofollow" target="_blank" class="registration__btn btn">
+                <a href="{{--button_href--}}" rel="nofollow" target="_blank" class="registration__btn btn btn-anim">
                   <span>más información</span>
                 </a>
               </div>
@@ -283,444 +288,6 @@
           </div>
         </section>
       </div>
-      <section class="comments" id="reviews-section">
-        <div class="comments-title">
-          <div class="comments-title-box">
-            <h2>Avaliações</h2>
-            <span>Insgesamt 1 Bewertungen von Casino</span>
-          </div>
-          <div class="comments-stars">
-            <img src="images/full-star.svg" alt=""><img src="images/full-star.svg" alt=""><img src="images/full-star.svg" alt=""><img src="images/full-star.svg" alt=""><img src="images/full-star.svg" alt="">
-          </div>
-        </div>
-        <div class="comments-sort">
-          <span>Sortieren nach</span>
-          <form method="GET" action="" id="sortingForm"><input type="hidden" name="reviews_sort"></form>
-          <div class="select" data-item="baseSelect" data-form-id="sortingForm">
-            <div data-item="baseSelectValue">Сначала самые новые</div>
-            <div class="select-values">
-              <div data-value="date_desc" class="value selected" data-item="baseSelectItem"> Сначала самые новые </div>
-              <div data-value="date_asc" class="value " data-item="baseSelectItem"> Сначала самые старые </div>
-              <div data-value="usefull_desc" class="value " data-item="baseSelectItem"> Сначала полезные </div>
-              <div data-value="usefull_asc" class="value " data-item="baseSelectItem"> Сначала бесполезные </div>
-            </div>
-          </div>
-        </div>
-        <ol class="comments-list hide">
-          <li class="comment" id="comment-1">
-            <article class="comment-article" id="article-comment-1">
-              <div class="comment-header">
-                <div class="comment-user">
-                  <div class="comment-user-image">
-                    <img src="images/user-icon.svg" alt="">
-                  </div>
-                  <div class="comment-user-info">
-                    <span>John Doe</span>
-                    <span class="comment-user-info-date">2024-09-16 14:16:33</span>
-                  </div>
-                </div>
-                <div class="comment-vote">
-                  <img src="images/full-star.svg" alt=""><img src="images/full-star.svg" alt=""><img src="images/full-star.svg" alt=""><img src="images/full-star.svg" alt=""><img src="images/full-star.svg" alt="">
-                </div>
-              </div>
-              <div class="comment-content">
-                <p>What the heck! WOW!</p>
-              </div>
-              <div class="comment-footer">
-                <form method="POST" action="/review/6/like" class="comment-footer-like active">
-                  <input type="hidden" name="_token" value="u7G9Trv692Hyq09HiPqz02jaP880ZhOPyV16bSwA">
-                  <div class="comment-likes">123</div>
-                  <img src="images/thumbup-icon.svg" alt="">
-                  <button>Gesund</button>
-                </form>
-                <div class="comment-footer-answer">
-                  <img src="images/comment-icon.svg" alt="">
-                  <button id="comment-btn-1" data-action="openReply">Antwort</button>
-                </div>
-              </div>
-            </article>
-            <div class="comment-form comment-answer-form hide" data-item="reviewForm">
-              <div class="comment-form-title">
-                <span>Hinterlassen Sie eine Bewertung</span>
-              </div>
-              <form method="POST" action="/review">
-                <input type="hidden" name="_token" value="u7G9Trv692Hyq09HiPqz02jaP880ZhOPyV16bSwA">
-                <div class="g-recaptcha" data-size="normal" data-theme="light" id="recaptcha-element"></div>
-                <input name="page_id" type="hidden" value="">
-                <input name="rating" type="hidden" data-item="hiddenRating">
-                <input type="hidden" name="reply_id" value="1">
-                <div class="comment-form-container">
-                  <div class="comment-form-left">
-                    <input name="author" type="text" placeholder="Ihr Name">
-                    <div class="check-robot">
-                      <label class="checkbox"><input type="checkbox"><span>Ich bin kein Roboter</span></label>
-                    </div>
-                    <button type="submit" class="comment-form-btn">Feedback senden</button>
-                  </div>
-                  <div class="comment-form-right">
-                    <textarea name="text"></textarea>
-                  </div>
-                </div>
-              </form>
-            </div>
-            <ul class="children">
-              <li class="comment comment-answer" data-comment-id="11">
-                <article class="comment-article" id="article-comment-1">
-                  <div class="comment-header">
-                    <div class="comment-user">
-                      <div class="comment-user-image">
-                        <img src="images/user-icon.svg" alt="">
-                      </div>
-                      <div class="comment-user-info">
-                        <span>John Doe</span>
-                        <span class="comment-user-info-date">2024-09-16 14:16:33</span>
-                      </div>
-                    </div>
-                    <div class="comment-vote">
-                      <img src="images/full-star.svg" alt=""><img src="images/full-star.svg" alt=""><img src="images/full-star.svg" alt=""><img src="images/full-star.svg" alt=""><img src="images/full-star.svg" alt="">
-                    </div>
-                  </div>
-                  <div class="comment-content">
-                    <p>Ответ на отзыв. Wow! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis quis esse iste quam ab perferendis nulla natus dolores iure commodi.</p>
-                  </div>
-                  <div class="comment-footer">
-                    <form method="POST" action="/review/6/like" class="comment-footer-like">
-                      <input type="hidden" name="_token" value="u7G9Trv692Hyq09HiPqz02jaP880ZhOPyV16bSwA">
-                      <div class="comment-likes">1237</div>
-                      <img src="images/thumbup-icon.svg" alt="">
-                      <button>Gesund</button>
-                    </form>
-                  </div>
-                </article>
-              </li>
-            </ul>
-          </li>
-          <li class="comment" id="comment-2">
-            <article class="comment-article" id="article-comment-1">
-              <div class="comment-header">
-                <div class="comment-user">
-                  <div class="comment-user-image">
-                    <img src="images/user-icon.svg" alt="">
-                  </div>
-                  <div class="comment-user-info">
-                    <span>John Doe</span>
-                    <span class="comment-user-info-date">2024-09-16 14:16:33</span>
-                  </div>
-                </div>
-                <div class="comment-vote">
-                  <img src="images/full-star.svg" alt=""><img src="images/full-star.svg" alt=""><img src="images/full-star.svg" alt=""><img src="images/full-star.svg" alt=""><img src="images/full-star.svg" alt="">
-                </div>
-              </div>
-              <div class="comment-content">
-                <p>What the heck! WOW!</p>
-              </div>
-              <div class="comment-footer">
-                <form method="POST" action="/review/6/like" class="comment-footer-like">
-                  <input type="hidden" name="_token" value="u7G9Trv692Hyq09HiPqz02jaP880ZhOPyV16bSwA">
-                  <div class="comment-likes">1237</div>
-                  <img src="images/thumbup-icon.svg" alt="">
-                  <button>Gesund</button>
-                </form>
-                <div class="comment-footer-answer">
-                  <img src="images/comment-icon.svg" alt="">
-                  <button id="comment-btn-1" data-action="openReply">Antwort</button>
-                </div>
-              </div>
-            </article>
-            <div class="comment-form comment-answer-form hide" data-item="reviewForm">
-              <div class="comment-form-title">
-                <span>Hinterlassen Sie eine Bewertung</span>
-              </div>
-              <form method="POST" action="/review">
-                <input type="hidden" name="_token" value="u7G9Trv692Hyq09HiPqz02jaP880ZhOPyV16bSwA">
-                <div class="g-recaptcha" data-size="normal" data-theme="light" id="recaptcha-element"></div>
-                <input name="page_id" type="hidden" value="">
-                <input name="rating" type="hidden" data-item="hiddenRating">
-                <input type="hidden" name="reply_id" value="1">
-                <div class="comment-form-container">
-                  <div class="comment-form-left">
-                    <input name="author" type="text" placeholder="Ihr Name">
-                    <div class="check-robot">
-                      <label class="checkbox"><input type="checkbox"><span>Ich bin kein Roboter</span></label>
-                    </div>
-                    <button type="submit" class="comment-form-btn">Feedback senden</button>
-                  </div>
-                  <div class="comment-form-right">
-                    <textarea name="text"></textarea>
-                  </div>
-                </div>
-              </form>
-            </div>
-            <ul class="children">
-              <li class="comment comment-answer" data-comment-id="11">
-                <article class="comment-article" id="article-comment-1">
-                  <div class="comment-header">
-                    <div class="comment-user">
-                      <div class="comment-user-image">
-                        <img src="images/user-icon.svg" alt="">
-                      </div>
-                      <div class="comment-user-info">
-                        <span>John Doe</span>
-                        <span class="comment-user-info-date">2024-09-16 14:16:33</span>
-                      </div>
-                    </div>
-                    <div class="comment-vote">
-                      <img src="images/full-star.svg" alt=""><img src="images/full-star.svg" alt=""><img src="images/full-star.svg" alt=""><img src="images/full-star.svg" alt=""><img src="images/full-star.svg" alt="">
-                    </div>
-                  </div>
-                  <div class="comment-content">
-                    <p>Ответ на отзыв. Wow! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis quis esse iste quam ab perferendis nulla natus dolores iure commodi.</p>
-                  </div>
-                  <div class="comment-footer">
-                    <form method="POST" action="/review/6/like" class="comment-footer-like">
-                      <input type="hidden" name="_token" value="u7G9Trv692Hyq09HiPqz02jaP880ZhOPyV16bSwA">
-                      <div class="comment-likes">1237</div>
-                      <img src="images/thumbup-icon.svg" alt="">
-                      <button>Gesund</button>
-                    </form>
-                  </div>
-                </article>
-              </li>
-            </ul>
-          </li>
-          <li class="comment" id="comment-3">
-            <article class="comment-article" id="article-comment-1">
-              <div class="comment-header">
-                <div class="comment-user">
-                  <div class="comment-user-image">
-                    <img src="images/user-icon.svg" alt="">
-                  </div>
-                  <div class="comment-user-info">
-                    <span>John Doe</span>
-                    <span class="comment-user-info-date">2024-09-16 14:16:33</span>
-                  </div>
-                </div>
-                <div class="comment-vote">
-                  <img src="images/full-star.svg" alt=""><img src="images/full-star.svg" alt=""><img src="images/full-star.svg" alt=""><img src="images/full-star.svg" alt=""><img src="images/full-star.svg" alt="">
-                </div>
-              </div>
-              <div class="comment-content">
-                <p>What the heck! WOW!</p>
-              </div>
-              <div class="comment-footer">
-                <form method="POST" action="/review/6/like" class="comment-footer-like">
-                  <input type="hidden" name="_token" value="u7G9Trv692Hyq09HiPqz02jaP880ZhOPyV16bSwA">
-                  <div class="comment-likes">1237</div>
-                  <img src="images/thumbup-icon.svg" alt="">
-                  <button>Gesund</button>
-                </form>
-                <div class="comment-footer-answer">
-                  <img src="images/comment-icon.svg" alt="">
-                  <button id="comment-btn-1" data-action="openReply">Antwort</button>
-                </div>
-              </div>
-            </article>
-            <div class="comment-form comment-answer-form hide" data-item="reviewForm">
-              <div class="comment-form-title">
-                <span>Hinterlassen Sie eine Bewertung</span>
-              </div>
-              <form method="POST" action="/review">
-                <input type="hidden" name="_token" value="u7G9Trv692Hyq09HiPqz02jaP880ZhOPyV16bSwA">
-                <div class="g-recaptcha" data-size="normal" data-theme="light" id="recaptcha-element"></div>
-                <input name="page_id" type="hidden" value="">
-                <input name="rating" type="hidden" data-item="hiddenRating">
-                <input type="hidden" name="reply_id" value="1">
-                <div class="comment-form-container">
-                  <div class="comment-form-left">
-                    <input name="author" type="text" placeholder="Ihr Name">
-                    <div class="check-robot">
-                      <label class="checkbox"><input type="checkbox"><span>Ich bin kein Roboter</span></label>
-                    </div>
-                    <button type="submit" class="comment-form-btn">Feedback senden</button>
-                  </div>
-                  <div class="comment-form-right">
-                    <textarea name="text"></textarea>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </li>
-          <li class="comment" id="comment-4">
-            <article class="comment-article" id="article-comment-1">
-              <div class="comment-header">
-                <div class="comment-user">
-                  <div class="comment-user-image">
-                    <img src="images/user-icon.svg" alt="">
-                  </div>
-                  <div class="comment-user-info">
-                    <span>John Doe</span>
-                    <span class="comment-user-info-date">2024-09-16 14:16:33</span>
-                  </div>
-                </div>
-                <div class="comment-vote">
-                  <img src="images/full-star.svg" alt=""><img src="images/full-star.svg" alt=""><img src="images/full-star.svg" alt=""><img src="images/full-star.svg" alt=""><img src="images/full-star.svg" alt="">
-                </div>
-              </div>
-              <div class="comment-content">
-                <p>What the heck! WOW!</p>
-              </div>
-              <div class="comment-footer">
-                <form method="POST" action="/review/6/like" class="comment-footer-like">
-                  <input type="hidden" name="_token" value="u7G9Trv692Hyq09HiPqz02jaP880ZhOPyV16bSwA">
-                  <div class="comment-likes">1237</div>
-                  <img src="images/thumbup-icon.svg" alt="">
-                  <button>Gesund</button>
-                </form>
-                <div class="comment-footer-answer">
-                  <img src="images/comment-icon.svg" alt="">
-                  <button id="comment-btn-1" data-action="openReply">Antwort</button>
-                </div>
-              </div>
-            </article>
-            <div class="comment-form comment-answer-form hide" data-item="reviewForm">
-              <div class="comment-form-title">
-                <span>Hinterlassen Sie eine Bewertung</span>
-              </div>
-              <form method="POST" action="/review">
-                <input type="hidden" name="_token" value="u7G9Trv692Hyq09HiPqz02jaP880ZhOPyV16bSwA">
-                <div class="g-recaptcha" data-size="normal" data-theme="light" id="recaptcha-element"></div>
-                <input name="page_id" type="hidden" value="">
-                <input name="rating" type="hidden" data-item="hiddenRating">
-                <input type="hidden" name="reply_id" value="1">
-                <div class="comment-form-container">
-                  <div class="comment-form-left">
-                    <input name="author" type="text" placeholder="Ihr Name">
-                    <div class="check-robot">
-                      <label class="checkbox"><input type="checkbox"><span>Ich bin kein Roboter</span></label>
-                    </div>
-                    <button type="submit" class="comment-form-btn">Feedback senden</button>
-                  </div>
-                  <div class="comment-form-right">
-                    <textarea name="text"></textarea>
-                  </div>
-                </div>
-              </form>
-            </div>
-            <ul class="children">
-              <li class="comment comment-answer" data-comment-id="11">
-                <article class="comment-article" id="article-comment-1">
-                  <div class="comment-header">
-                    <div class="comment-user">
-                      <div class="comment-user-image">
-                        <img src="images/user-icon.svg" alt="">
-                      </div>
-                      <div class="comment-user-info">
-                        <span>John Doe</span>
-                        <span class="comment-user-info-date">2024-09-16 14:16:33</span>
-                      </div>
-                    </div>
-                    <div class="comment-vote">
-                      <img src="images/full-star.svg" alt=""><img src="images/full-star.svg" alt=""><img src="images/full-star.svg" alt=""><img src="images/full-star.svg" alt=""><img src="images/full-star.svg" alt="">
-                    </div>
-                  </div>
-                  <div class="comment-content">
-                    <p>Ответ на отзыв. Wow! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis quis esse iste quam ab perferendis nulla natus dolores iure commodi.</p>
-                  </div>
-                  <div class="comment-footer">
-                    <form method="POST" action="/review/6/like" class="comment-footer-like">
-                      <input type="hidden" name="_token" value="u7G9Trv692Hyq09HiPqz02jaP880ZhOPyV16bSwA">
-                      <div class="comment-likes">1237</div>
-                      <img src="images/thumbup-icon.svg" alt="">
-                      <button>Gesund</button>
-                    </form>
-                  </div>
-                </article>
-              </li>
-            </ul>
-          </li>
-          <li class="comment" id="comment-5">
-            <article class="comment-article" id="article-comment-1">
-              <div class="comment-header">
-                <div class="comment-user">
-                  <div class="comment-user-image">
-                    <img src="images/user-icon.svg" alt="">
-                  </div>
-                  <div class="comment-user-info">
-                    <span>John Doe</span>
-                    <span class="comment-user-info-date">2024-09-16 14:16:33</span>
-                  </div>
-                </div>
-                <div class="comment-vote">
-                  <img src="images/full-star.svg" alt=""><img src="images/full-star.svg" alt=""><img src="images/full-star.svg" alt=""><img src="images/full-star.svg" alt=""><img src="images/full-star.svg" alt="">
-                </div>
-              </div>
-              <div class="comment-content">
-                <p>What the heck! WOW!</p>
-              </div>
-              <div class="comment-footer">
-                <form method="POST" action="/review/6/like" class="comment-footer-like">
-                  <input type="hidden" name="_token" value="u7G9Trv692Hyq09HiPqz02jaP880ZhOPyV16bSwA">
-                  <div class="comment-likes">1237</div>
-                  <img src="images/thumbup-icon.svg" alt="">
-                  <button>Gesund</button>
-                </form>
-                <div class="comment-footer-answer">
-                  <img src="images/comment-icon.svg" alt="">
-                  <button id="comment-btn-1" data-action="openReply">Antwort</button>
-                </div>
-              </div>
-            </article>
-            <div class="comment-form comment-answer-form hide" data-item="reviewForm">
-              <div class="comment-form-title">
-                <span>Hinterlassen Sie eine Bewertung</span>
-              </div>
-              <form method="POST" action="/review">
-                <input type="hidden" name="_token" value="u7G9Trv692Hyq09HiPqz02jaP880ZhOPyV16bSwA">
-                <div class="g-recaptcha" data-size="normal" data-theme="light" id="recaptcha-element"></div>
-                <input name="page_id" type="hidden" value="">
-                <input name="rating" type="hidden" data-item="hiddenRating">
-                <input type="hidden" name="reply_id" value="1">
-                <div class="comment-form-container">
-                  <div class="comment-form-left">
-                    <input name="author" type="text" placeholder="Ihr Name">
-                    <div class="check-robot">
-                      <label class="checkbox"><input type="checkbox"><span>Ich bin kein Roboter</span></label>
-                    </div>
-                    <button type="submit" class="comment-form-btn">Feedback senden</button>
-                  </div>
-                  <div class="comment-form-right">
-                    <textarea name="text"></textarea>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </li>
-          <div class="comments-showmore">Alle Bewertungen anzeigen</div>
-          <div class="comments-lessmore hide">Bewertungen ausblenden</div>
-        </ol>
-        <div class="comment-form" data-item="reviewForm" data-form-id="">
-          <div class="comment-form-title">
-            <span>Hinterlassen Sie eine Bewertung</span>
-            <div class="comment-form-stars rating">
-              <span class="stars-container" score="5" id="223" data-item="formStars">
-          <span class="star" id="star1" data-item-value="1" data-item="formStar"></span>
-              <span class="star" id="star2" data-item-value="2" data-item="formStar"></span>
-              <span class="star" id="star3" data-item-value="3" data-item="formStar"></span>
-              <span class="star" id="star4" data-item-value="4" data-item="formStar"></span>
-              <span class="star" id="star5" data-item-value="5" data-item="formStar"></span>
-              </span>
-            </div>
-          </div>
-          <form method="POST" action="/review">
-            <input type="hidden" name="_token" value="u7G9Trv692Hyq09HiPqz02jaP880ZhOPyV16bSwA">
-            <div class="g-recaptcha" data-size="normal" data-theme="light" id="recaptcha-element"></div>
-            <input name="page_id" type="hidden" value="1">
-            <input name="rating" type="hidden" data-item="hiddenRating">
-            <div class="comment-form-container">
-              <div class="comment-form-left">
-                <input name="author" type="text" placeholder="Ihr Name">
-                <div class="check-robot">
-                  <label class="checkbox"><input type="checkbox"><span>Ich bin kein Roboter</span></label>
-                </div>
-                <button type="submit" class="comment-form-btn">Feedback senden</button>
-              </div>
-              <div class="comment-form-right">
-                <textarea name="text"></textarea>
-              </div>
-            </div>
-          </form>
-        </div>
-      </section>
     </div>
   </div>
   <footer>
@@ -762,16 +329,21 @@
               </ul>
             </nav>
           </div>
-          <div class="footer__icons">
-            <img src="images/icons/1.svg" alt="Fair" title="Fair">
-            <img src="images/icons/2.svg" alt="RG" title="RG">
-            <img src="images/icons/3.svg" alt="18+" title="18+">
-            <img src="images/icons/4.svg" alt="Gamcare" title="Gamcare">
-          </div>
           <div class="footer__info">
             <div class="footer__rights">
               <p>Lamabet.com es propiedad y está operado por Boomerang N.V., número de registro 158509, dirección registrada: Zuikertuintjeweg Z/N (Zuikertuin Tower), Willemstad, Curazao ("Compañía"). Contáctenos support@lamabet.com. Lamabet.com tiene licencia y está regulado por el Gobierno de la Isla Autónoma de Anjouan, Unión de Comoras y opera bajo Número de licencia ALSI-152406018-FI2. Lamabet.com ha superado todas las normas reglamentarias y está legalmente autorizado para realizar operaciones de juego para todos y cada uno de los juegos de azar y apuestas. La Compañía tiene una subsidiaria, Trustgreen LTD, que actúa como agente de pagos de Boomerang N.V., con domicilio social en Avlonos, 1, Maria House 1075, Nicosia, Chipre, y número de registro HE 455172. Triangle Tech OÜ, una entidad legal constituida en Estonia con el número de registro 16710711, con domicilio social ubicado en Harju maakond, Tallin, Kesklinna linnaosa, Pärnu mnt 105, 11312, Estonia, también actúa como agente de pagos para Boomerang N.V.</p>
             </div>
+            <ul class="footer__icons">
+              <li><img src="images/icons/1.svg" alt="18+"></li>
+              <li><img src="images/icons/2.svg" alt="SSL"></li>
+              <li><a href="{{--button_href--}}" target="_blank" aria-label="BeGambleAware"><img src="images/icons/3.webp" alt="BeGambleAware" title="BeGambleAware"></a></li>
+              <li><a href="{{--button_href--}}" target="_blank" aria-label="GamCare"><img src="images/icons/4.webp" alt="GamCare"></a></li>
+            </ul>
+            <ul class="socials">
+              <li><a href="{{--button_href--}}" aria-label="Facebook"><img src="images/icons/socials/1.svg" alt="Facebook" title="Facebook"></a></li>
+              <li><a href="{{--button_href--}}" aria-label="Quora"><img src="images/icons/socials/2.svg" alt="Quora" title="Quora"></a></li>
+              <li><a href="{{--button_href--}}" aria-label="X"><img src="images/icons/socials/3.svg" alt="X" title="X"></a></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -824,15 +396,20 @@
           </li>
         </ul>
         <div class="footer__info">
-          <div class="footer__icons">
-            <img src="images/icons/1.svg" alt="Fair" title="Fair">
-            <img src="images/icons/2.svg" alt="RG" title="RG">
-            <img src="images/icons/3.svg" alt="18+" title="18+">
-            <img src="images/icons/4.svg" alt="Gamcare" title="Gamcare">
-          </div>
           <div class="footer__rights">
             <p>Lamabet.com es propiedad y está operado por Boomerang N.V., número de registro 158509, dirección registrada: Zuikertuintjeweg Z/N (Zuikertuin Tower), Willemstad, Curazao ("Compañía"). Contáctenos support@lamabet.com. Lamabet.com tiene licencia y está regulado por el Gobierno de la Isla Autónoma de Anjouan, Unión de Comoras y opera bajo Número de licencia ALSI-152406018-FI2. Lamabet.com ha superado todas las normas reglamentarias y está legalmente autorizado para realizar operaciones de juego para todos y cada uno de los juegos de azar y apuestas. La Compañía tiene una subsidiaria, Trustgreen LTD, que actúa como agente de pagos de Boomerang N.V., con domicilio social en Avlonos, 1, Maria House 1075, Nicosia, Chipre, y número de registro HE 455172. Triangle Tech OÜ, una entidad legal constituida en Estonia con el número de registro 16710711, con domicilio social ubicado en Harju maakond, Tallin, Kesklinna linnaosa, Pärnu mnt 105, 11312, Estonia, también actúa como agente de pagos para Boomerang N.V.</p>
           </div>
+          <ul class="footer__icons">
+            <li><img src="images/icons/1.svg" alt="18+"></li>
+            <li><img src="images/icons/2.svg" alt="SSL"></li>
+            <li><a href="{{--button_href--}}" target="_blank" aria-label="BeGambleAware"><img src="images/icons/3.webp" alt="BeGambleAware" title="BeGambleAware"></a></li>
+            <li><a href="{{--button_href--}}" target="_blank" aria-label="GamCare"><img src="images/icons/4.webp" alt="GamCare"></a></li>
+          </ul>
+          <ul class="socials">
+            <li><a href="{{--button_href--}}" aria-label="Facebook"><img src="images/icons/socials/1.svg" alt="Facebook" title="Facebook"></a></li>
+            <li><a href="{{--button_href--}}" aria-label="Quora"><img src="images/icons/socials/2.svg" alt="Quora" title="Quora"></a></li>
+            <li><a href="{{--button_href--}}" aria-label="X"><img src="images/icons/socials/3.svg" alt="X" title="X"></a></li>
+          </ul>
         </div>
       </div>
     </div>
