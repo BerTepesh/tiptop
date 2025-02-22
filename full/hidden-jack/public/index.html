@@ -94,7 +94,7 @@
                 </a>
               </div>
               <div class="intro__caption">welkomstpakket</div>
-              <div class="intro__title"> ontvang tot €5000 <br> + 300 gratis spins </div>
+              <div class="intro__title" id="bonus"> ontvang tot €5000 <br> + 300 gratis spins </div>
               <a href="{{--button_href--}}" rel="nofollow" target="_blank" class="intro__btn btn btn-anim">
                 <span>Toneelstuk</span>
               </a>
@@ -106,10 +106,10 @@
             <div class="author__holder">
               <ul class="author__info">
                 <li>
-                  <b>Gepubliceerd:</b> 02/12/2024
+                  <b>Gepubliceerd:</b> February 21, 2025
                 </li>
                 <li>
-                  <b>Laatst bijgewerkt:</b> 03/12/2024
+                  <b>Laatst bijgewerkt:</b> <span class="js-last-update"></span>
                 </li>
                 <li>
                   <img src="images/clock.svg" alt="Clock" title="Clock"> 5 minutes
@@ -328,40 +328,73 @@
               <div class="footer__holder">
                 <nav class="footer-nav navigation">
                   <ul>
-                    <li><a href="{{--button_href--}}" rel="nofollow" target="_blank">À propos de nous</a></li>
-                    <li><a href="{{--button_href--}}" rel="nofollow" target="_blank">Conditions d'utilisation</a></li>
-                    <li><a href="{{--button_href--}}" rel="nofollow" target="_blank">Politique de confidentialité</a></li>
-                    <li><a href="{{--button_href--}}" rel="nofollow" target="_blank">Jeu responsable</a></li>
-                    <li><a href="{{--button_href--}}" rel="nofollow" target="_blank">Nous contacter</a></li>
-                    <li><a href="{{--button_href--}}" rel="nofollow" target="_blank">FAQ</a></li>
-                    <li><a href="{{--button_href--}}" rel="nofollow" target="_blank">Compte, Retraits de gains, Bonus</a></li>
-                    <li><a href="{{--button_href--}}" rel="nofollow" target="_blank">Règles des paris sportifs</a></li>
-                    <li><a href="{{--button_href--}}" rel="nofollow" target="_blank">Politique KYC & AML</a></li>
-                    <li><a href="{{--button_href--}}" rel="nofollow" target="_blank">CGU des bonus</a></li>
-                    <li><a href="{{--button_href--}}" rel="nofollow" target="_blank">Paiements & Retraits</a></li>
-                    <li><a href="{{--button_href--}}" rel="nofollow" target="_blank">Promotions</a></li>
+                    <!-- footer-menu -->
                   </ul>
                 </nav>
               </div>
               <div class="footer__icons">
                 <ul class="socials">
-                  <li><a href="{{--button_href--}}" target="_blank" aria-label="Facebook"><img src="images/icons/socials/1.svg" alt="Facebook" title="Facebook"><br></a></li>
-                  <li><a href="{{--button_href--}}" target="_blank" aria-label="Quora"><img src="images/icons/socials/2.svg" alt="Quora" title="Quora"><br></a></li>
-                  <li><a href="{{--button_href--}}" target="_blank" aria-label="X"><img src="images/icons/socials/3.svg" alt="X" title="X"><br></a></li>
-                  <li><a href="{{--button_href--}}" target="_blank" aria-label="Linkedin"><img src="images/icons/socials/4.svg" alt="Linkedin" title="Linkedin"><br></a></li>
-                  <li><a href="{{--button_href--}}" target="_blank" aria-label="Reddit"><img src="images/icons/socials/5.svg" alt="Reddit" title="Reddit"><br></a></li>
+                  <!-- <li>
+							<a href="#" aria-label="Facebook" title="Facebook">
+								<svg class="icon icon-social-1" width="35" height="35" role="presentation"><use href="images/icons.svg#social-1" xlink:href="images/icons.svg#social-1"></use></svg>
+							</a>
+						</li> -->
+                  <li>
+                    <a href="#" aria-label="Quora" title="Quora">
+                      <svg class="icon icon-social-2" width="35" height="35" role="presentation">
+                        <use href="images/icons.svg#social-2" xlink:href="images/icons.svg#social-2"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" aria-label="X" title="X">
+                      <svg class="icon icon-social-3" width="35" height="35" role="presentation">
+                        <use href="images/icons.svg#social-3" xlink:href="images/icons.svg#social-3"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <!-- <li><li>
+							<a href="#" target="_blank" aria-label="Linkedin" title="Linkedin">
+								<svg class="icon icon-social-4" width="35" height="35" role="presentation"><use href="images/icons.svg#social-4" xlink:href="images/icons.svg#social-4"></use></svg>
+							</a> 
+						</li> -->
+                  <!-- <li><li>
+							<a href="#" target="_blank" aria-label="Reddit" title="Reddit">
+								<svg class="icon icon-social-5" width="35" height="35" role="presentation"><use href="images/icons.svg#social-5" xlink:href="images/icons.svg#social-5"></use></svg>
+							</a>
+						</li> -->
                 </ul>
                 <ul class="footer__warnings">
-                  <li><a href="{{--button_href--}}" target="_blank" aria-label="RF"><img src="images/icons/5.svg" alt="RG" title="RG"><br></a></li>
-                  <li><a href="{{--button_href--}}" target="_blank" aria-label="GamCare"><img src="images/icons/3.svg" alt="GamCare" title="GamCare"><br></a></li>
-                  <li><a href="{{--button_href--}}" target="_blank" aria-label="BeGambleAware"><img src="images/icons/4.svg" alt="BeGambleAware" title="BeGambleAware"><br></a></li>
-                  <li><img src="images/icons/1.svg" alt="18+" title="18+"></li>
+                  <!-- <li>
+							<a href="#" target="_blank" aria-label="RG" title="RG">
+								<svg class="icon icon-warning-1" width="113" height="35" role="presentation"><use href="images/icons.svg#warning-1" xlink:href="images/icons.svg#warning-1"></use></svg>
+							</a>
+						</li> -->
+                  <li>
+                    <a href="https://www.gamcare.org.uk/" aria-label="GamCare" title="GamCare">
+                      <svg class="icon icon-warning-2" width="123" height="35" role="presentation">
+                        <use href="images/icons.svg#warning-2" xlink:href="images/icons.svg#warning-2"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.begambleaware.org/" aria-label="BeGambleAware" title="BeGambleAware">
+                      <svg class="icon icon-warning-3" width="274" height="35" role="presentation">
+                        <use href="images/icons.svg#warning-3" xlink:href="images/icons.svg#warning-3"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li title="18+">
+                    <svg class="icon icon-warning-4" width="35" height="35" role="presentation">
+                      <use href="images/icons.svg#warning-4" xlink:href="images/icons.svg#warning-4"></use>
+                    </svg>
+                  </li>
                 </ul>
               </div>
               <div class="footer__info">
                 <div class="footer__rights">
                   <p>{{--decliner--}}</p>
-                  <p><span class="js-year"></span> &copy; {{--copyrights--}}</p>
+                  <p><span class="js-year"></span>&copy; {{--copyrights--}}</p>
                 </div>
               </div>
             </div>
