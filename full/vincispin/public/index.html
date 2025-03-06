@@ -92,7 +92,7 @@
                 </a>
               </div>
               <div class="intro__caption">Welcome Package</div>
-              <div class="intro__title"> up to €500 + <br> 350 Free Spins </div>
+              <div class="intro__title" id="bonus"> up to €500 + <br> 350 Free Spins </div>
               <a href="{{--button_href--}}" rel="nofollow" target="_blank" class="intro__btn btn btn-anim">
                 <span>JOIN NOW</span>
               </a>
@@ -107,7 +107,7 @@
                   <b>Published:</b> 02/01/2025
                 </li>
                 <li>
-                  <b>Last update:</b> 03/01/2025
+                  <b>Last update:</b> <span class="js-last-update"></span>
                 </li>
                 <li>
                   <img src="images/clock.svg" alt="Clock" title="Clock"> 5 minutes
@@ -313,23 +313,77 @@
               </div>
               <div class="footer__icons">
                 <ul class="socials">
-                  <li><a href="{{--button_href--}}" target="_blank" aria-label="Facebook"><img src="images/icons/socials/1.svg" alt="Facebook" title="Facebook"><br></a></li>
-                  <li><a href="{{--button_href--}}" target="_blank" aria-label="Quora"><img src="images/icons/socials/2.svg" alt="Quora" title="Quora"><br></a></li>
-                  <li><a href="{{--button_href--}}" target="_blank" aria-label="X"><img src="images/icons/socials/3.svg" alt="X" title="X"><br></a></li>
-                  <li><a href="{{--button_href--}}" target="_blank" aria-label="Linkedin"><img src="images/icons/socials/4.svg" alt="Linkedin" title="Linkedin"><br></a></li>
-                  <li><a href="{{--button_href--}}" target="_blank" aria-label="Reddit"><img src="images/icons/socials/5.svg" alt="Reddit" title="Reddit"><br></a></li>
+                  <!-- <li>
+							<a href="#" aria-label="Facebook" title="Facebook">
+								<svg class="icon icon-social-1" width="35" height="35" role="presentation"><use href="images/icons.svg#social-1" xlink:href="images/icons.svg#social-1"></use></svg>
+							</a>
+						</li> -->
+                  <li>
+                    <a href="#" aria-label="Quora" title="Quora">
+                      <svg class="icon icon-social-2" width="35" height="35" role="presentation">
+                        <use href="images/icons.svg#social-2" xlink:href="images/icons.svg#social-2"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" aria-label="X" title="X">
+                      <svg class="icon icon-social-3" width="35" height="35" role="presentation">
+                        <use href="images/icons.svg#social-3" xlink:href="images/icons.svg#social-3"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <!-- <li><li>
+							<a href="#" target="_blank" aria-label="Linkedin" title="Linkedin">
+								<svg class="icon icon-social-4" width="35" height="35" role="presentation"><use href="images/icons.svg#social-4" xlink:href="images/icons.svg#social-4"></use></svg>
+							</a> 
+						</li> -->
+                  <!-- <li><li>
+							<a href="#" target="_blank" aria-label="Reddit" title="Reddit">
+								<svg class="icon icon-social-5" width="35" height="35" role="presentation"><use href="images/icons.svg#social-5" xlink:href="images/icons.svg#social-5"></use></svg>
+							</a>
+						</li> -->
                 </ul>
                 <ul class="footer__warnings">
-                  <li><a href="{{--button_href--}}" target="_blank" aria-label="RF"><img src="images/icons/5.svg" alt="RG" title="RG"><br></a></li>
-                  <li><a href="{{--button_href--}}" target="_blank" aria-label="GamCare"><img src="images/icons/3.svg" alt="GamCare" title="GamCare"><br></a></li>
-                  <li><a href="{{--button_href--}}" target="_blank" aria-label="BeGambleAware"><img src="images/icons/4.svg" alt="BeGambleAware" title="BeGambleAware"><br></a></li>
-                  <li><img src="images/icons/1.svg" alt="18+" title="18+"></li>
+                  <!-- <li>
+							<a href="#" target="_blank" aria-label="RG" title="RG">
+								<svg class="icon icon-warning-1" width="113" height="35" role="presentation"><use href="images/icons.svg#warning-1" xlink:href="images/icons.svg#warning-1"></use></svg>
+							</a>
+						</li> -->
+                  <li>
+                    <a href="https://www.gamcare.org.uk/" aria-label="GamCare" title="GamCare">
+                      <svg class="icon icon-warning-2" width="123" height="35" role="presentation">
+                        <use href="images/icons.svg#warning-2" xlink:href="images/icons.svg#warning-2"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.begambleaware.org/" aria-label="BeGambleAware" title="BeGambleAware">
+                      <svg class="icon icon-warning-3" width="274" height="35" role="presentation">
+                        <use href="images/icons.svg#warning-3" xlink:href="images/icons.svg#warning-3"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li title="18+">
+                    <svg class="icon icon-warning-4" width="35" height="35" role="presentation">
+                      <use href="images/icons.svg#warning-4" xlink:href="images/icons.svg#warning-4"></use>
+                    </svg>
+                  </li>
                 </ul>
               </div>
               <div class="footer__info">
                 <div class="footer__rights">
                   <p>{{--decliner--}}</p>
-                  <p><span class="js-year"></span> &copy; {{--copyrights--}}</p>
+                  <p><span class="js-year"></span>&copy; {{--copyrights--}}</p>
+                  <p>
+                    <a href="https://.nl" rel="nofollow">
+                      <img src="images/flags/nl.webp" alt="nl"> Vincispin NL </a> | <a href="https://.de" rel="nofollow">
+                      <img src="images/flags/de.webp" alt="de">Vincispin DE </a> | <a href="https://.it" rel="nofollow">
+                      <img src="images/flags/it.webp" alt="it">Vincispin IT </a> | <a href="https://.fr" rel="nofollow">
+                      <img src="images/flags/fr.webp" alt="fr">Vincispin FR </a> | <a href="https://.gr" rel="nofollow">
+                      <img src="images/flags/gr.webp" alt="gr">Vincispin GR </a> | <a href="https://.cz" rel="nofollow">
+                      <img src="images/flags/cz.webp" alt="cz">Vincispin CZ </a> | <a href="https://.pl" rel="nofollow">
+                      <img src="images/flags/pl.webp" alt="pl">Vincispin PL </a>
+                  </p>
                 </div>
               </div>
             </div>
